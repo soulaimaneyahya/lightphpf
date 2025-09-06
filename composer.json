@@ -23,7 +23,7 @@
       "./vendor/bin/phpcs --standard=PSR12 --encoding=utf-8 --extensions=php app/Core/*",
       "./vendor/bin/phpcs --standard=PSR12 --encoding=utf-8 --extensions=php app/Models/*",
       "./vendor/bin/phpcs --standard=PSR12 --encoding=utf-8 --extensions=php app/Http/*",
-      "./vendor/bin/phpcs --standard=PSR12 --encoding=utf-8 --extensions=php app/Commands/*"
+      "./vendor/bin/phpcs --standard=PSR12 --encoding=utf-8 --extensions=php app/Console/*"
     ],
     "php-cs-fixer": [
       "PHP_CS_FIXER_IGNORE_ENV=1 ./vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --allow-risky=yes"
@@ -38,5 +38,8 @@
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.7",
     "friendsofphp/php-cs-fixer": "dev-master"
-  }
+  },
+  "bin": [
+    "public/clear-cache.php"
+  ]
 }

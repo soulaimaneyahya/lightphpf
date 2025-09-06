@@ -21,6 +21,8 @@ LightPHPF supports:
 * [x] Database connection; load db config; using signleton-class
 * [x] Twig template engine
 * [x] Console Command; clear-cache
+* [⏳] IOC dependency injection container
+* [⏳] LightPHPF middleware
 
 <img src="./public/assets/imgs/x.png" alt="project" />
 

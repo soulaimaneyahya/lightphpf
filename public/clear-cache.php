@@ -7,9 +7,9 @@
  * Date: 2023-03-14
  */
 
-use App\Commands\ClearCache;
+use App\Console\Commands\ClearCacheCommand;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$clearCache = new ClearCache();
-$clearCache->run();
+$clearCacheCommand = new ClearCacheCommand();
+$clearCacheCommand->run();

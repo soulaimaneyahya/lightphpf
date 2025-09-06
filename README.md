@@ -1,6 +1,8 @@
 # LightPHPF
 
 [![CI](https://github.com/lightphpf/lightphpf/actions/workflows/ci.yml/badge.svg)](https://github.com/lightphpf/lightphpf/actions/workflows/ci.yml)
+[![Total Downloads](https://img.shields.io/packagist/dt/lightphpf/lightphpf.svg?style=flat-square)](https://packagist.org/packages/lightphpf/lightphpf)
+[![License](https://img.shields.io/github/license/lightphpf/lightphpf?style=flat-square)](https://github.com/lightphpf/lightphpf/blob/main/LICENSE)
 
 ```
     __    _       __    __  ____  __  ______  ______

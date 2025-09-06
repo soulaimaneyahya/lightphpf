@@ -1,6 +1,6 @@
 # LightPHPF
 
-[![CI](https://github.com/lightphpf/lightphpf/actions/workflows/ci.yaml/badge.svg)](https://github.com/lightphpf/lightphpf/actions/workflows/ci.yaml)
+[![CI](https://github.com/lightphpf/lightphpf/actions/workflows/ci.yml/badge.svg)](https://github.com/lightphpf/lightphpf/actions/workflows/ci.yml)
 
 ```
     __    _       __    __  ____  __  ______  ______
@@ -21,6 +21,8 @@ LightPHPF supports:
 * [x] Database connection; load db config; using signleton-class
 * [x] Twig template engine
 * [x] Console Command; clear-cache
+* [⏳] IOC dependency injection container
+* [⏳] LightPHPF middleware
 
 <img src="./public/assets/imgs/x.png" alt="project" />
 
@@ -33,15 +35,16 @@ composer create-project lightphpf/lightphpf <my-app-name>
 ```
 
 lightphpf cli:
+
+clear cache;
 ```sh
-lightphpf new <my-app-name>
 lightphpf clear:cache
-lightphpf serve
+php bin/lightphpf clear:cache
 ```
 
 ```sh
-sudo chown -R $USER:www-data app/Bootstrap/Cache
-sudo chmod -R 777 app/Bootstrap/Cache
+lightphpf new <my-app-name>
+lightphpf serve
 ```
 
 ---

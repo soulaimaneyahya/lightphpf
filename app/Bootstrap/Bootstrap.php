@@ -21,4 +21,20 @@ final class Bootstrap
         $this->application = new Application($config, $twig);
         $this->baseController = new BaseController($config, $twig);
     }
+
+    /**
+     * @return \App\Core\Application
+     */
+    public function getApplication(): Application
+    {
+        return $this->application;
+    }
+
+    /**
+     * @return \App\Http\Controllers\BaseController
+     */
+    public function getBaseController(): BaseController
+    {
+        return $this->baseController;
+    }
 }

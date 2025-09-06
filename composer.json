@@ -10,7 +10,7 @@
   "authors": [
     {
       "name": "Soulaimane yahya",
-      "email": "soulaimaneyh07@gmail.com"
+      "email": "soulaimaneyahya1@gmail.com"
     }
   ],
   "autoload": {
@@ -41,5 +41,13 @@
   },
   "bin": [
     "bin/lightphpf"
-  ]
+  ],
+  "minimum-stability": "stable",
+  "config": {
+    "optimize-autoloader": true
+  },
+  "support": {
+    "issues": "https://github.com/lightphpf/lightphpf/issues",
+    "source": "https://github.com/lightphpf/lightphpf"
+  }
 }

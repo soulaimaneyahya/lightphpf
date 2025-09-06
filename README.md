@@ -35,9 +35,15 @@ composer create-project lightphpf/lightphpf <my-app-name>
 ```
 
 lightphpf cli:
+
+clear cache;
+```sh
+lightphpf clear:cache
+php bin/lightphpf clear:cache
+```
+
 ```sh
 lightphpf new <my-app-name>
-lightphpf clear:cache
 lightphpf serve
 ```
 

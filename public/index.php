@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /**
  * Author: Soulaimane Yahya
  * Date: 2023-03-14
@@ -17,14 +19,4 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-use App\Bootstrap\Bootstrap;
-
-require_once __DIR__ . '/../vendor/autoload.php';
-
-$config = require_once __DIR__ . '/../config/app.php';
-$twig = require_once __DIR__ . '/../config/twig.php';
-
-(new Bootstrap(
-    $config,
-    $twig
-));
+require __DIR__ . '/require-bootstrap.php';

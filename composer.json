@@ -30,7 +30,7 @@
     ]
   },
   "require": {
-    "php": "^8.3",
+    "php": "^8.2|^8.3",
     "symfony/var-dumper": "^5.0",
     "vlucas/phpdotenv": "^5.5",
     "twig/twig": "^3.5"
@@ -40,6 +40,6 @@
     "friendsofphp/php-cs-fixer": "dev-master"
   },
   "bin": [
-    "public/clear-cache.php"
+    "bin/lightphpf"
   ]
 }

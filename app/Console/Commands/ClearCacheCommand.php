@@ -23,7 +23,7 @@ final class ClearCacheCommand
      * @return void
      * @throws \Throwable
      */
-    public function run(): void
+    public function handle(): void
     {
         try {
             exec('sudo chown -R $(whoami) .');
@@ -31,15 +31,17 @@ final class ClearCacheCommand
             $this->clearCache($this->cacheDir);
             $this->createGitFile($this->cacheDir);
 
-            dump("Cache Cleared Successfully\n");
+            dump("✅ Cache Cleared Successfully\n");
         } catch (\Throwable $th) {
-            dump('Something went wrong...');
+            dump('❌ Something went wrong...');
         }
     }
 
     /**
-     * @return void
      * Delete the contents of the cache directory
+     *
+     * @param  string $cacheDir
+     * @return void
      */
     protected function clearCache(string $cacheDir): void
     {
@@ -54,8 +56,10 @@ final class ClearCacheCommand
     }
 
     /**
-     * @return void
      * create .gitignore file
+     *
+     * @param  string $cacheDir
+     * @return void
      */
     protected function createGitFile(string $cacheDir): void
     {

@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace App\Console;
 
 /**
- * @details kernel class for console commands
+ * @details Register and run console commands
  */
-final class Kernel
+final class ConsoleApplication
 {
     /**
      * @var array<string, string>

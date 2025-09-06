@@ -5,11 +5,9 @@ declare(strict_types=1);
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use App\Console\Kernel;
-
-$kernel = new Kernel();
+use App\Console\ConsoleApplication;
 
 /**
- * @details global CLI executable entry point
+ * @details Run the console application
  */
-$kernel->run();
+(new ConsoleApplication())->run();

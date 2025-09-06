@@ -1,6 +1,6 @@
 {
   "name": "lightphpf/lightphpf",
-  "description": "LightPHPF is a micro PHP framework that follows the Model-View-Controller (MVC) architecture pattern.",
+  "description": "The skeleton application for the LightPHPF framework.",
   "type": "project",
   "keywords": [
     "framework",
@@ -19,6 +19,7 @@
     }
   },
   "scripts": {
+    "composer-dump": "composer dump-autoload --optimize",
     "php-fixer": [
       "./vendor/bin/phpcs --standard=PSR12 --encoding=utf-8 --extensions=php app/Core/*",
       "./vendor/bin/phpcs --standard=PSR12 --encoding=utf-8 --extensions=php app/Models/*",

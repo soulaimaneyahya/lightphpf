@@ -1,6 +1,6 @@
 # LightPHPF
 
-[![CI](https://github.com/lightphpf/lightphpf/actions/workflows/ci.yaml/badge.svg)](https://github.com/lightphpf/lightphpf/actions/workflows/ci.yaml)
+[![CI](https://github.com/lightphpf/lightphpf/actions/workflows/ci.yml/badge.svg)](https://github.com/lightphpf/lightphpf/actions/workflows/ci.yml)
 
 ```
     __    _       __    __  ____  __  ______  ______

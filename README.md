@@ -1,17 +1,10 @@
 # LightPHPF
 
+<a href="https://github.com/lightphpf" target="_blank"><img src="./public/assets/imgs/xlpf.png" width="200" alt="Laravel Logo"></a>
+
 [![CI](https://github.com/lightphpf/lightphpf/actions/workflows/ci.yml/badge.svg)](https://github.com/lightphpf/lightphpf/actions/workflows/ci.yml)
 [![Total Downloads](https://img.shields.io/packagist/dt/lightphpf/lightphpf.svg?style=flat-square)](https://packagist.org/packages/lightphpf/lightphpf)
 [![License](https://img.shields.io/github/license/lightphpf/lightphpf?style=flat-square)](https://github.com/lightphpf/lightphpf/blob/main/LICENSE)
-
-```
-    __    _       __    __  ____  __  ______  ______
-   / /   (_____ _/ /_  / /_/ __ \/ / / / __ \/ ____/
-  / /   / / __ `/ __ \/ __/ /_/ / /_/ / /_/ / /_    
- / /___/ / /_/ / / / / /_/ ____/ __  / ____/ __/    
-/_____/_/\__, /_/ /_/\__/_/   /_/ /_/_/   /_/       
-        /____/                                      
-```
 
 LightPHPF is a micro PHP framework that follows the Model-View-Controller (MVC) architecture pattern.
 It is specifically designed for small school or enterprise projects that require a lightweight and efficient framework to build web applications.
@@ -26,6 +19,8 @@ LightPHPF supports:
 * [⏳] IOC dependency injection container
 * [⏳] LightPHPF middleware
 
+## LightPHPF starter kit
+
 <img src="./public/assets/imgs/x.png" alt="project" />
 
 ### install requirements
@@ -36,17 +31,12 @@ composer global require lightphpf/lightphpf
 composer create-project lightphpf/lightphpf <my-app-name>
 ```
 
-lightphpf cli:
+## lightphpf cli:
 
 clear cache;
 ```sh
 lightphpf clear:cache
 php bin/lightphpf clear:cache
-```
-
-```sh
-lightphpf new <my-app-name>
-lightphpf serve
 ```
 
 ---

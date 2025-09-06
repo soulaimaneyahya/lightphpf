@@ -30,7 +30,7 @@
     ]
   },
   "require": {
-    "php": "^8.2",
+    "php": "^8.3",
     "symfony/var-dumper": "^5.0",
     "vlucas/phpdotenv": "^5.5",
     "twig/twig": "^3.5"

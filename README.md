@@ -39,11 +39,6 @@ lightphpf clear:cache
 lightphpf serve
 ```
 
-```sh
-sudo chown -R $USER:www-data app/Bootstrap/Cache
-sudo chmod -R 777 app/Bootstrap/Cache
-```
-
 ---
 
 Need helps? Reach me out

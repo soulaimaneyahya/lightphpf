@@ -32,7 +32,7 @@ export PATH="$PATH:$(pwd)/vendor/bin"
 ```
 
 ```sh
-composer create-project lightphpf/lightphpf <my-app-name>
+composer create-project lightphpf/lightphpf:dev-main <my-app-name>
 ```
 
 ## lightphpf cli:

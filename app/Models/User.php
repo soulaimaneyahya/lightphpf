@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace App\Models;
 
-use App\Core\DatabaseConnection;
+use LightPHPF\Core\Application\DatabaseConnection;
 
 final class User
 {
-    private $db;
+    private DatabaseConnection $db;
 
     public function __construct(array $conf)
     {

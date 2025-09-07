@@ -13,7 +13,7 @@ LightPHPF supports:
 
 * [x] MVC Architecture
 * [x] Routing system; matches route, decides controller/action
-* [x] Database connection; load db config; using signleton-class
+* [x] Database connection; load db config; using singleton-class
 * [x] Twig template engine
 * [x] Console Command; clear-cache
 * [⏳] IOC dependency injection container

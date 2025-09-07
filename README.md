@@ -32,7 +32,16 @@ export PATH="$PATH:$(pwd)/vendor/bin"
 ```
 
 ```sh
-composer create-project lightphpf/lightphpf:dev-main <my-app-name>
+composer create-project lightphpf/lightphpf <my-app-name>
+```
+
+```sh
+cp .env.example .env
+```
+
+```sh
+sudo chown -R $USER:www-data app/Bootstrap/Cache
+sudo chmod -R 777 app/Bootstrap/Cache
 ```
 
 ## lightphpf cli:

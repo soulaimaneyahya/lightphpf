@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use App\Bootstrap\Bootstrap;
+use LightPHPF\Core\Bootstrap\Bootstrap;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 

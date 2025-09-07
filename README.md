@@ -13,7 +13,7 @@ LightPHPF supports:
 
 * [x] MVC Architecture
 * [x] Routing system; matches route, decides controller/action
-* [x] Database connection; load db config; using signleton-class
+* [x] Database connection; load db config; using singleton-class
 * [x] Twig template engine
 * [x] Console Command; clear-cache
 * [⏳] IOC dependency injection container
@@ -27,7 +27,11 @@ LightPHPF supports:
 
 Install;
 ```sh
-composer global require lightphpf/lightphpf
+composer global require lightphpf/core
+export PATH="$PATH:$(pwd)/vendor/bin"
+```
+
+```sh
 composer create-project lightphpf/lightphpf <my-app-name>
 ```
 
@@ -36,7 +40,6 @@ composer create-project lightphpf/lightphpf <my-app-name>
 clear cache;
 ```sh
 lightphpf clear:cache
-php bin/lightphpf clear:cache
 ```
 
 ---

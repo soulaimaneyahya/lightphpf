@@ -4,7 +4,8 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\BaseController;
+use App\Models\User;
+use LightPHPF\Core\Http\Controllers\BaseController;
 
 final class Home extends BaseController
 {
@@ -16,9 +17,12 @@ final class Home extends BaseController
     {
         $template = $this->twig->load('index.twig');
 
+        dump($this->model(User::class)->getUsers());
+        dump($this->model(User::class)->getUserById(1));
+
         echo $template->render([
-            'app_url' => $this->app_url,
-            'app_name' => $this->app_name,
+            'app_url' => $this->appUrl,
+            'app_name' => $this->appName,
             'title' => 'Home Page',
         ]);
     }

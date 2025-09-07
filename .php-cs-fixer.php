@@ -2,10 +2,8 @@
 
 $finder = PhpCsFixer\Finder::create()
     ->in([
-        'app/Core',
         'app/Models',
         'app/Http',
-        'app/Console'
     ])
     ->exclude('vendor')
     ->exclude('storage');

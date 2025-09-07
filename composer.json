@@ -21,10 +21,8 @@
   "scripts": {
     "composer-dump": "composer dump-autoload --optimize",
     "php-fixer": [
-      "./vendor/bin/phpcs --standard=PSR12 --encoding=utf-8 --extensions=php app/Core/*",
       "./vendor/bin/phpcs --standard=PSR12 --encoding=utf-8 --extensions=php app/Models/*",
-      "./vendor/bin/phpcs --standard=PSR12 --encoding=utf-8 --extensions=php app/Http/*",
-      "./vendor/bin/phpcs --standard=PSR12 --encoding=utf-8 --extensions=php app/Console/*"
+      "./vendor/bin/phpcs --standard=PSR12 --encoding=utf-8 --extensions=php app/Http/*"
     ],
     "php-cs-fixer": [
       "PHP_CS_FIXER_IGNORE_ENV=1 ./vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --allow-risky=yes"
@@ -38,11 +36,9 @@
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.7",
-    "friendsofphp/php-cs-fixer": "dev-master"
+    "friendsofphp/php-cs-fixer": "dev-master",
+    "lightphpf/core": "^1.0"
   },
-  "bin": [
-    "bin/lightphpf"
-  ],
   "minimum-stability": "stable",
   "config": {
     "optimize-autoloader": true

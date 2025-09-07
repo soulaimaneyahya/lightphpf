@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\BaseController;
+use LightPHPF\Core\Http\Controllers\BaseController;
 
 final class Contact extends BaseController
 {
@@ -17,8 +17,8 @@ final class Contact extends BaseController
         $template = $this->twig->load('pages/contact.twig');
 
         echo $template->render([
-            'app_url' => $this->app_url,
-            'app_name' => $this->app_name,
+            'app_url' => $this->appUrl,
+            'app_name' => $this->appName,
             'title' => 'Contact Us'
         ]);
     }

@@ -17,8 +17,8 @@ final class About extends BaseController
         $template = $this->twig->load('pages/about.twig');
 
         echo $template->render([
-            'app_url' => $this->app_url,
-            'app_name' => $this->app_name,
+            'app_url' => $this->appUrl,
+            'app_name' => $this->appName,
             'title' => 'About Us'
         ]);
     }

@@ -17,8 +17,8 @@ final class Register extends BaseController
         $template = $this->twig->load('auth/register.twig');
 
         echo $template->render([
-            'app_url' => $this->app_url,
-            'app_name' => $this->app_name,
+            'app_url' => $this->appUrl,
+            'app_name' => $this->appName,
             'title' => 'Register'
         ]);
     }

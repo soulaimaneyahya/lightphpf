@@ -74,7 +74,7 @@
             "dist": {
                 "type": "path",
                 "url": "../core",
-                "reference": "c194a4d6e9559d132eb22c4eea3a85d559482864"
+                "reference": "334e5f11e926981186184b7157e48fbb639d8105"
             },
             "require": {
                 "php": "^8.2|^8.3",
@@ -106,7 +106,7 @@
                 ],
                 "php-fixer": [
                     "./vendor/bin/phpcs --standard=PSR12 --encoding=utf-8 --extensions=php src/Application/*",
-                    "./vendor/bin/phpcs --standard=PSR12 --encoding=utf-8 --extensions=php src/Models/*",
+                    "./vendor/bin/phpcs --standard=PSR12 --encoding=utf-8 --extensions=php src/Bootstrap/*",
                     "./vendor/bin/phpcs --standard=PSR12 --encoding=utf-8 --extensions=php src/Http/*",
                     "./vendor/bin/phpcs --standard=PSR12 --encoding=utf-8 --extensions=php src/Console/*"
                 ],

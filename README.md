@@ -27,7 +27,7 @@ LightPHPF supports:
 
 Install;
 ```sh
-composer global require lightphpf/lightphpf
+composer global require lightphpf/core
 composer create-project lightphpf/lightphpf <my-app-name>
 ```
 
@@ -36,7 +36,6 @@ composer create-project lightphpf/lightphpf <my-app-name>
 clear cache;
 ```sh
 lightphpf clear:cache
-php bin/lightphpf clear:cache
 ```
 
 ---

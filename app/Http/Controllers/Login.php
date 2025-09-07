@@ -17,8 +17,8 @@ final class Login extends BaseController
         $template = $this->twig->load('auth/login.twig');
 
         echo $template->render([
-            'app_url' => $this->app_url,
-            'app_name' => $this->app_name,
+            'app_url' => $this->appUrl,
+            'app_name' => $this->appName,
             'title' => 'Login'
         ]);
     }

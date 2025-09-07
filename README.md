@@ -28,6 +28,10 @@ LightPHPF supports:
 Install;
 ```sh
 composer global require lightphpf/core
+export PATH="$PATH:$(pwd)/vendor/bin"
+```
+
+```sh
 composer create-project lightphpf/lightphpf <my-app-name>
 ```
 

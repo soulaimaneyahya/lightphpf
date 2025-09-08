@@ -12,7 +12,7 @@ final class User
 
     public function __construct(array $conf)
     {
-        $this->db = new DatabaseConnection($conf);
+        $this->db = DatabaseConnection::getInstance($conf);
     }
 
     /**
@@ -20,22 +20,22 @@ final class User
      */
     public function getUsers(): array
     {
-        $stmt = $this->db->getPdo()->query("SELECT * FROM users");
+        $this->db->query("SELECT * FROM users");
+        $this->db->execute();
 
-        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+        return $this->db->resultSet();
     }
 
     /**
      * @param  int|string $id
-     * @return array
+     * @return \stdClass
      */
-    public function getUserById(int|string $id): array
+    public function getUserById(int|string $id): \stdClass
     {
-        $stmt = $this->db->getPdo()->prepare("SELECT * FROM users WHERE id = :id");
-        $stmt->execute([
-            'id' => $id,
-        ]);
+        $this->db->query("SELECT * FROM users WHERE id = :id");
+        $this->db->bind(':id', $id);
+        $this->db->execute();
 
-        return $stmt->fetch(\PDO::FETCH_ASSOC);
+        return $this->db->single();
     }
 }

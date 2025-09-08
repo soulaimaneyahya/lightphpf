@@ -1217,16 +1217,16 @@
         },
         {
             "name": "lightphpf/core",
-            "version": "v1.0.1",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lightphpf/core.git",
-                "reference": "9d8a9a5ad962f327ddb4eeab1cff837dd3698b46"
+                "reference": "f7d43e29ab646883d7065c40ad55adf449c8d6d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lightphpf/core/zipball/9d8a9a5ad962f327ddb4eeab1cff837dd3698b46",
-                "reference": "9d8a9a5ad962f327ddb4eeab1cff837dd3698b46",
+                "url": "https://api.github.com/repos/lightphpf/core/zipball/f7d43e29ab646883d7065c40ad55adf449c8d6d5",
+                "reference": "f7d43e29ab646883d7065c40ad55adf449c8d6d5",
                 "shasum": ""
             },
             "require": {
@@ -1267,7 +1267,7 @@
                 "issues": "https://github.com/lightphpf/core/issues",
                 "source": "https://github.com/lightphpf/core"
             },
-            "time": "2025-09-07T20:20:53+00:00"
+            "time": "2025-09-08T00:50:39+00:00"
         },
         {
             "name": "psr/container",
